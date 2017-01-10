@@ -1,12 +1,16 @@
-<li>
+
+
+<li class="well">
   <!-- {{#link-to 'rental' rental.id}}{{rental.owner}}'s {{rental.type}} in {{rental.city}}{{/link-to}} -->
+  <img src={{post.image}} {{action 'imageHide'}} width="300px"/>
+  <h3>{{post.title}}</h3>
+  <p>{{post.teaser}}</p>
+  <p>{{post.owner}}</p>
 
-  {{post.image}}{{post.title}}{{post.teaser}}{{post.owner}}
-
-  {{#if isImageShowing}}
+  <!-- {{#if isImageShowing}}
     <p><img src={{post.image}} {{action 'imageHide'}} width="300px"/></p>
     <button class="btn btn-primary"{{action 'imageHide'}}>Hide Image</button>
     {{else}}<br>
     <button class="btn btn-primary"{{action 'imageShow'}}>Show Image</button>
-  {{/if}}
+  {{/if}} -->
 </li>
